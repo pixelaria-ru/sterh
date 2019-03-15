@@ -1,0 +1,47 @@
+.header
+  position absolute
+  top 0
+  z-index 9
+  padding-top 35px
+  .logo
+    margin-right 70px
+    img
+      object-fit contain
+  &__item
+    margin-right 25px
+    a
+      color #ffffff
+      font-size 14px
+      font-weight 700
+  &__right
+    text-align right
+  &__contacts
+    a
+      color #ffffff
+      &.tel
+        font-size 18px
+        font-weight 700
+      &.mail
+        font-size 12px
+        margin-top 5px
+
+
+.button-leed
+  height 40px
+  width 120px
+  box-shadow 0 0 4px rgba(0, 0, 0, 0.1)
+  background-color #1781e1
+  transform rotate(-90deg)
+  color #ffffff
+  margin-top -6px
+  font-size 14px
+  line-height 3px
+  position relative
+  &:before
+    content ''
+    background-image url('../images/phone-receiver.png')
+    width 16px
+    height 16px
+    display block
+    margin-right 15px
+    transform rotate(90deg)

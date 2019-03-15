@@ -1,0 +1,20 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title Главная
+  body 
+    include inc/header.pug
+    main.main 
+      // Первый экран 
+      include section/initial-screen.pug
+      // Секция с товарами
+      include section/section-goods.pug
+      // Больше чем аренда
+      include section/section-rent.pug
+      // Схема работы
+      include section/section-shema.pug
+      // Преимущества работы
+      include section/section-advantages.pug
+    include inc/footer.pug
+            

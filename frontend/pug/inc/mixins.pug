@@ -1,0 +1,23 @@
+mixin icon(name,mod)
+  - mod = mod || ''
+  svg(class="icon icon-" + name + ' ' + mod)
+      use(xlink:href="#icon-" + name)
+
+
+mixin goods-item(title,img)
+  article.goods-item.flex.f-d__c.a-i__c
+    h3= title
+    .goods-item__img
+      img(src=`images/${img}` alt='')
+    ul.goods-item__list
+      li.goods-item__item.flex
+        p Мощности:
+        p от 14 до 320 кВт
+      li.goods-item__item.flex
+        p Исполнение: 
+        p в кожухе, передвижные 
+      li.goods-item__item.flex
+        p Время поставки: 
+        p от 1 суток
+    .goods-item__info
+      p Atlas Copro, SDMO, Visa Onis

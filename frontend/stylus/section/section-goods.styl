@@ -1,0 +1,43 @@
+.section--goods
+  padding-top 120px
+  padding-bottom 140px
+  position relative
+  &:before
+    content ''
+    background-image url('../images/solid.jpg')
+    background-attachment fixed
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -2
+  .goods-item
+      padding 30px 20px
+      background #fff
+      box-shadow 0 20px 6px -10px rgba(0, 0, 0, 0.05)
+      margin-right 24px
+      &:last-child
+        margin-right 0
+      h3
+        text-align center
+        color #555555
+        font-size 18px
+      &__img
+        max-width 200px
+        max-height 130px
+      img
+        margin-top 20px
+        object-fit contain
+      &__list
+        border-top 1px solid #dadada
+        padding-top 25px
+        margin-top 15px
+      &__info
+        width 100%
+        margin-top 20px
+      p
+        color #444444
+        font-size 14px
+        font-weight 300
+        line-height 20px

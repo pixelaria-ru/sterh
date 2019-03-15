@@ -1,0 +1,69 @@
+// grid
+.grid
+  display grid
+
+// flex
+.flex
+  display flex
+.f-w__w
+  flex-wrap wrap
+
+// justify-content
+.j-c__s-b
+  justify-content space-between
+.j-c__c
+  justify-content center
+
+// flex direction
+.f-d__c
+  flex-direction column
+
+// align-items
+.a-i__f-e
+  align-items flex-end
+.a-i__c
+  align-items center
+.p__r
+  position relative
+
+// z-index
+.z-i__-1
+  z-index -1
+.z-i__-2
+  z-index -2
+.z-i__0
+  z-index 0
+.z-i__1
+  z-index 1
+.z-i__2
+  z-index 2
+
+
+
+// dark background
+.bg-dark
+  &:before
+    content ''
+    background-color #000000
+    opacity 0.2
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+
+// transition bottom line to right
+.b-line
+  position relative
+  &:after
+    content ''
+    position absolute
+    bottom -5px
+    left 0
+    transition .33s
+    width 0%
+    height 2px
+    background #fff
+  &:hover
+    &:after
+      width 100%

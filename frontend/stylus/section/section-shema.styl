@@ -1,0 +1,113 @@
+.section--shema
+  padding-top 80px
+  padding-bottom 180px
+  position relative
+  &:before
+    content ''
+    background-image url('../images/solid.jpg')
+    background-attachment fixed
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -2
+  h2
+    color #444444
+    font-size 36px
+    font-weight 700
+    line-height 48px
+    span
+      color #0456a0
+  &__list
+    margin-top 110px
+    position relative
+    &:before
+      content ''
+      background-image url('../images/shema-decor.png')
+      background-repeat no-repeat
+      z-index -1
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+
+  &__item
+    width 150px
+    height 150px
+    box-shadow 0 20px 6px -10px rgba(0, 0, 0, 0.05)
+    border 1px solid #0456a0
+    background-color #ffffff
+    margin-right 30px
+    position relative
+    &:before
+      content ''
+      width 40px
+      height 40px
+      border-radius 50%
+      right -10px
+      top -10px
+      position absolute
+    &:nth-child(1)
+      &:before
+              background-image url('../images/schema-icon-1.png')
+              background-repeat no-repeat
+              background-position center
+              background-color #62a7e5
+      &:after
+        content '1'
+    &:nth-child(2)
+      &:before
+              background-image url('../images/schema-icon-2.png')
+              background-repeat no-repeat
+              background-position center
+              background-color #62a7e5
+      &:after
+        content '2'
+    &:nth-child(3)
+      &:before
+              background-image url('../images/schema-icon-3.png')
+              background-repeat no-repeat
+              background-position center
+              background-color #62a7e5
+      &:after
+        content '3'
+    &:nth-child(4)
+      &:before
+              background-image url('../images/schema-icon-4.png')
+              background-repeat no-repeat
+              background-position center
+              background-color #62a7e5
+      &:after
+        content '4'
+    &:nth-child(5)
+      &:before
+              background-image url('../images/schema-icon-5.png')
+              background-repeat no-repeat
+              background-position center
+              background-color #62a7e5
+      &:after
+        content '5'
+    &:after
+      position absolute
+      bottom -20px
+      right 10px
+      height 60px
+      opacity 0.05
+      color #444444
+      font-size 72px
+      font-weight 700
+    &:last-child
+      margin-right 0
+    &:nth-child(even)
+      margin-top 60px
+    &:nth-child(3)
+      margin-top -30px
+
+    p
+      color #444444
+      font-size 14px
+      font-weight 300
+      line-height 22px
+      max-width 125px

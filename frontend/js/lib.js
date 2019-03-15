@@ -1,0 +1,1 @@
+wrdTabs('.wrd-tabs')
