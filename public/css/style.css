@@ -475,30 +475,8 @@ input[type='submit'] + label
 
     content: '';
 
-    background: url('../images/transparent none repeat 0 0 / auto auto padding-box border-box scroll-screen.jpg') fixed 0 0/cover;
-
-    background: url('../images/initial-screen.jpg') fixed 0 0/cover;
+    background: url('../images/back.jpg') fixed 0 0/cover;
     background-position-y: -150px;
-}
-
-.section--initial-screen:after
-{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    content: '';
-
-    background: -webkit-gradient(linear, left top, left bottom, from(#02549e), to(rgba(216,216,216,0)));
-
-    background: -webkit-linear-gradient(top, #02549e 0%, rgba(216,216,216,0) 100%);
-
-    background: -o-linear-gradient(top, #02549e 0%, rgba(216,216,216,0) 100%);
-
-    background: linear-gradient(180deg, #02549e 0%, rgba(216,216,216,0) 100%);
 }
 
 .section--initial-screen p
