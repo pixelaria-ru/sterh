@@ -34,18 +34,19 @@ mixin news-article
 
 
 mixin product-card
-  article.product-card.flex 
-    img(src='images/dizel-genrator-1.jpg' alt='')
-    .product-card__info 
-      h3 Дизельный генератор Onis VISA P14
-      ul.product-card__list
-        li.product-card__item.flex
-          p Основная / резервная мощность:
-          p 10 кВт (15 кВА) / 12 кВт / 22 кВА
-        li.product-card__item.flex
-          p Двигатель, генератор:
-          p Perkins ST-13, Linz E1S13SA
-        li.product-card__item.flex
-          p Объем топливного бака:
-          p 120 л (расход 7 л/ч при 100% мощности)
-    button.button-order Заказать
+  article.product-card
+    a(href='page-product.html').flex
+      img(src='images/dizel-genrator-1.jpg' alt='')
+      .product-card__info 
+        h3 Дизельный генератор Onis VISA P14
+        ul.product-card__list
+          li.product-card__item.flex
+            p Основная / резервная мощность:
+            p 10 кВт (15 кВА) / 12 кВт / 22 кВА
+          li.product-card__item.flex
+            p Двигатель, генератор:
+            p Perkins ST-13, Linz E1S13SA
+          li.product-card__item.flex
+            p Объем топливного бака:
+            p 120 л (расход 7 л/ч при 100% мощности)
+      button.button.button--blue Заказать

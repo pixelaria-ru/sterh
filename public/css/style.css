@@ -253,6 +253,11 @@ input[type='submit'] + label
     justify-content: center;
 }
 
+.j-c__f-e
+{
+    justify-content: flex-end;
+}
+
 .f-d__c
 {
     flex-direction: column;
@@ -381,6 +386,25 @@ input[type='submit'] + label
 {
     padding-right: 200px;
     padding-left: 200px;
+}
+
+.button--nav
+{
+    font-size: 0.875rem;
+
+    color: #0456a0;
+}
+
+.button--blue
+{
+    font-size: 0.875rem;
+
+    padding: 12px 22px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #0456a0;
 }
 
 .header
@@ -1051,6 +1075,55 @@ input[type='submit'] + label
     color: #444;
 }
 
+.page__item
+{
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #dadada;
+}
+
+.page__item:last-child
+{
+    border-bottom: 0;
+}
+
+.page__item--left
+{
+    width: 245px;
+}
+
+.page__item h6
+{
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+
+    margin-top: 15px;
+
+    color: #0456a0;
+}
+
+.page__item h6:first-child
+{
+    margin-top: 0;
+}
+
+.page__item p
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    margin-top: 15px;
+
+    color: #444;
+}
+
+.page__item p:first-child
+{
+    margin-top: 0;
+}
+
 .page--news img:nth-child(2)
 {
     margin-bottom: 30px;
@@ -1082,23 +1155,118 @@ input[type='submit'] + label
     border-top: 1px solid #dadada;
 }
 
-.page--news .button--nav
+.page--product__left
 {
-    font-size: 0.875rem;
-
-    color: #0456a0;
+    max-width: 370px;
 }
 
-.page--news .button--blue
+.page--product__right
 {
-    font-size: 0.875rem;
+    max-width: 330px;
+}
 
-    padding: 12px 22px;
+.page--product__right img
+{
+    max-height: 220px;
+}
 
-    text-transform: uppercase;
+.page--product__discription
+{
+    margin-top: 25px;
+    padding: 20px;
 
-    color: #fff;
-    background: #0456a0;
+    border: 1px solid #dadada;
+}
+
+.page--product__discription p
+{
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+
+    color: #444;
+}
+
+.page--product__chart
+{
+    margin-top: 25px;
+}
+
+.page--product__chart img
+{
+    max-width: 180px;
+}
+
+.page--product__chart p
+{
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+
+    margin-left: 20px;
+
+    color: #444;
+}
+
+.page--product__order
+{
+    margin-top: 25px;
+}
+
+.page--product__order .button--blue
+{
+    margin-left: 20px;
+    padding: 12px 38px;
+}
+
+.page--product__conditions
+{
+    margin-top: 25px;
+}
+
+.page--product__conditions p
+{
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    color: #444;
+
+    align-items: center;
+}
+
+.page--product__conditions p:before
+{
+    display: block;
+
+    min-width: 25px;
+    height: 25px;
+    margin-right: 15px;
+
+    content: '';
+
+    border: 1px solid #0456a0;
+    border-radius: 50%;
+}
+
+.page--product__speedbar
+{
+    margin-top: 35px;
+
+    text-align: right;
+}
+
+.page--product__speedbar a,
+.page--product__speedbar span
+{
+    font-size: 0.75rem;
+
+    text-decoration: underline;
+
+    color: #c8c8c8;
 }
 
 .news-article
@@ -1245,21 +1413,11 @@ input[type='submit'] + label
     margin-right: 40px;
 }
 
-.product-card .button-order
+.product-card .button--blue
 {
-    font-size: 0.875rem;
-
     position: absolute;
     top: 0;
     right: 0;
-
-    padding: 12px 22px;
-
-    text-transform: uppercase;
-
-    color: #fff;
-    border: 1px solid #0456a0;
-    background: #0456a0;
 }
 
 .section--consultation
@@ -1305,55 +1463,6 @@ input[type='submit'] + label
     color: #fff;
     border: 1px solid #fff;
     background: #0456a0;
-}
-
-.page--contatcs__item
-{
-    margin-top: 20px;
-    padding-bottom: 20px;
-
-    border-bottom: 1px solid #dadada;
-}
-
-.page--contatcs__item:last-child
-{
-    border-bottom: 0;
-}
-
-.page--contatcs__item--left
-{
-    width: 245px;
-}
-
-.page--contatcs__item h6
-{
-    font-size: 0.875rem;
-    font-weight: 700;
-    line-height: 1.25rem;
-
-    margin-top: 15px;
-
-    color: #0456a0;
-}
-
-.page--contatcs__item h6:first-child
-{
-    margin-top: 0;
-}
-
-.page--contatcs__item p
-{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-
-    margin-top: 15px;
-
-    color: #444;
-}
-
-.page--contatcs__item p:first-child
-{
-    margin-top: 0;
 }
 
 .page--contatcs .map

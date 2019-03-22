@@ -1,0 +1,58 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title Категория новостей
+  body 
+    include inc/header.pug
+    main.main.bg-pattern
+      .bg-img 
+        img(src='images/bg-category-news.jpg' alt='')
+      .container.pd-200
+        .page.page--product.flex.j-c__s-b
+          .page--product__left
+            h1 Дизель-генератор Onis VISA P14
+            ul.page__list.list--contatcs
+              li.page__item.item--contatcs.flex
+                .page__item--left
+                  h6 Основная мощность:
+                  h6 Резервная мощность:
+                .page__item--right
+                  p 5 кВт / 8 кВА
+                  p 8 кВт / 12 кВА
+              li.page__item.item--contatcs.flex
+                .page__item--left
+                  h6 Двигатель:
+                  h6 Генератор переменного тока: 
+                .page__item--right
+                  p KHL 1200 PS-100
+                  p Macc Lite 300-ASP
+              li.page__item.item--contatcs.flex
+                .page__item--left
+                  h6 Напряжение:
+                  h6 Объем топливного бака:
+                  h6 Габариты: 
+                  h6 Вес сухой/рабочий
+                .page__item--right
+                  p 400/230 В 
+                  p 150 л
+                  p 1200х900х2090 мм
+                  p 1700/1910 кг
+            .page--product__chart.flex.a-i__c
+              img(src='images/product-chart.jpg' alt='')
+              p Расход топлива л/ч при различной мощности
+              
+          .page--product__right
+            img(src='images/product-img.jpg' alt='')
+            .page--product__discription
+              p Дизель-генератор Onis VISA P14 предназначен для выработки трехфазного электрического тока напряжением на объектах строительства, промышленнос и резервирования сети на муниципальных учреждениях, в том числе участков  с высокой степенью ответственности.
+            .page--product__order.flex.a-i__c.j-c__f-e
+              a(href='#').button--nav Заказать консультацию
+              button.button.button--blue ЗАКАЗАТЬ
+            .page--product__conditions
+              p Условия работы, сроков, можно кратко, одно-два предложения с ключевой информацией
+            .page--product__speedbar
+              a(href='index.html') Главная страница  /  
+              span Дизельные генераторы 
+              
+    include inc/footer.pug
