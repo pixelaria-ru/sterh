@@ -6,7 +6,17 @@
 :root
   --green #98cb01
 
-
+.bg-pattern
+  &:before
+    content ''
+    background-image url('../images/solid.jpg')
+    background-attachment fixed
+    position fixed
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -2
 .container
   max-width 1280px
   margin auto
@@ -25,6 +35,14 @@
 @import 'section/section-rent.styl'
 @import 'section/section-shema.styl'
 @import 'section/section-advantages.styl'
+
+
+
+@import 'pages/pages.styl'
+@import 'pages/page-news.styl'
+@import 'pages/category-news.styl'
+@import 'pages/catalog.styl'
+@import 'pages/contacts.styl'
 
 
 

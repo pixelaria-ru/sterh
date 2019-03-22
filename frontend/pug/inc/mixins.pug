@@ -21,3 +21,31 @@ mixin goods-item(title,img)
         p от 1 суток
     .goods-item__info
       p Atlas Copro, SDMO, Visa Onis
+
+mixin news-article
+  article.news-article
+    a(href='page-news.html').flex
+      img(src='images/img-news-1.jpg' alt='')
+      .news-article__info
+        h3 «Компания Стерх поздравляет своих клиентов и всех строителей с профессиональным праздником!»
+        p Уплотнение грунта при дорожном строительстве, работа с асфальтовым покрытием, укладка тротуарной плитки. Ни одна из этих работ не может обойтись без такого строительного оборудования как виброплита. Арендный парк компании Стерх обеспечит Вас виброплитами массой от 90 до 500 кг 
+          button Читать дальше
+
+
+
+mixin product-card
+  article.product-card.flex 
+    img(src='images/dizel-genrator-1.jpg' alt='')
+    .product-card__info 
+      h3 Дизельный генератор Onis VISA P14
+      ul.product-card__list
+        li.product-card__item.flex
+          p Основная / резервная мощность:
+          p 10 кВт (15 кВА) / 12 кВт / 22 кВА
+        li.product-card__item.flex
+          p Двигатель, генератор:
+          p Perkins ST-13, Linz E1S13SA
+        li.product-card__item.flex
+          p Объем топливного бака:
+          p 120 л (расход 7 л/ч при 100% мощности)
+    button.button-order Заказать

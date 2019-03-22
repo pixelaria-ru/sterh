@@ -1,0 +1,95 @@
+.initial-screen-catalog
+  margin-bottom 120px
+  &:before
+    background-image url('../images/catalog-bg.jpg')
+    background-attachment fixed
+    background-size cover
+    background-position bottom
+    position absolute
+  &:after
+    content ''
+    background-image linear-gradient(180deg, #02549e 0%, rgba(216, 216, 216, 0) 100%)
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -1
+  h1
+    max-width 462px
+    margin-right 20px
+    margin-top 100px
+  p
+    max-width 410px
+    &:before
+      background 0
+
+
+
+.product-card
+  box-shadow 0 20px 6px -10px rgba(0, 0, 0, 0.05)
+  background-color #ffffff
+  padding 55px 50px
+  position relative
+  margin-top 20px
+  img
+    max-width 210px
+    max-height 140px
+  &__info
+    margin-left 40px
+    width 100%
+    h3
+      color #444444
+      font-size 18px
+      padding-bottom 20px
+      border-bottom 1px solid #dadada
+  &__item
+    margin-top 15px
+    p
+      color #444444
+      font-size 14px
+      line-height 20px
+      &:first-child
+        width 220px
+        margin-right 40px
+  .button-order
+    position absolute
+    top 0
+    right 0
+    border 1px solid #0456a0
+    background-color #0456a0
+    color #ffffff
+    padding 12px 22px
+    font-size 14px
+    text-transform uppercase
+
+
+
+.section--consultation
+  padding-top 70px
+  padding-bottom 60px
+  margin-top 120px
+  background-image url('../images/consultation-bg.jpg')
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  background-blend-mode multiply
+  background-color #0456a0
+  h2
+    color #ffffff
+    font-size 36px
+    font-weight 300
+  p
+    color #ffffff
+    font-size 14px
+    line-height 20px
+    margin-top 20px
+  .button--consultation
+    border 1px solid #ffffff
+    background-color #0456a0
+    padding 12px 19px
+    color #ffffff
+    font-size 14px
+    text-transform uppercase
+    margin-top 30px
+    display inline-block

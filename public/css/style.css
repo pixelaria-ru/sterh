@@ -298,6 +298,16 @@ input[type='submit'] + label
     z-index: 2;
 }
 
+.f__r
+{
+    float: right;
+}
+
+.f__l
+{
+    float: left;
+}
+
 .bg-dark:before
 {
     position: absolute;
@@ -341,6 +351,20 @@ input[type='submit'] + label
 :root
 {
     --green: #98cb01;
+}
+
+.bg-pattern:before
+{
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background: url('../images/solid.jpg') fixed;
 }
 
 .container
@@ -476,7 +500,6 @@ input[type='submit'] + label
     content: '';
 
     background: url('../images/back.jpg') fixed 0 0/cover;
-    background-position-y: -150px;
 }
 
 .section--initial-screen p
@@ -529,7 +552,7 @@ input[type='submit'] + label
     border-bottom-color: #ffcc57;
 }
 
-h1
+.section--initial-screen h1
 {
     font-size: 3rem;
     font-weight: 700;
@@ -974,4 +997,370 @@ h1
     max-height: 175px;
     margin-top: -66px;
     margin-left: 20px;
+}
+
+.bg-img
+{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 740px;
+}
+
+.bg-img:after
+{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#02549e), to(rgba(216,216,216,0)));
+
+    background: -webkit-linear-gradient(top, #02549e 0%, rgba(216,216,216,0) 100%);
+
+    background: -o-linear-gradient(top, #02549e 0%, rgba(216,216,216,0) 100%);
+
+    background: linear-gradient(180deg, #02549e 0%, rgba(216,216,216,0) 100%);
+}
+
+.page
+{
+    margin-top: 220px;
+    margin-bottom: 150px;
+    padding: 70px 60px;
+
+    background: #fff;
+    box-shadow: 0 20px 6px -10px rgba(0,0,0,.05);
+}
+
+.page h1
+{
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 3rem;
+
+    margin-bottom: 50px;
+
+    color: #444;
+}
+
+.page--news img:nth-child(2)
+{
+    margin-bottom: 30px;
+}
+
+.page--news p
+{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    margin-top: 10px;
+
+    color: #444;
+}
+
+.page--news .img--right
+{
+    max-width: 220px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.page--news .other-news
+{
+    margin-top: 60px;
+    padding-top: 50px;
+
+    border-top: 1px solid #dadada;
+}
+
+.page--news .button--nav
+{
+    font-size: 0.875rem;
+
+    color: #0456a0;
+}
+
+.page--news .button--blue
+{
+    font-size: 0.875rem;
+
+    padding: 12px 22px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #0456a0;
+}
+
+.news-article
+{
+    margin-top: 20px;
+}
+
+.news-article img
+{
+    width: 160px;
+    height: 160px;
+    margin-right: 30px;
+}
+
+.news-article__info h3
+{
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+
+    color: #0456a0;
+}
+
+.news-article__info p
+{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    margin-top: 10px;
+
+    color: #444;
+}
+
+.news-article__info button
+{
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+
+    display: inline-block;
+
+    color: #0456a0;
+    background: 0;
+}
+
+.initial-screen-catalog
+{
+    margin-bottom: 120px;
+}
+
+.initial-screen-catalog:before
+{
+    position: absolute;
+
+    background: url('../images/catalog-bg.jpg') fixed bottom/cover;
+}
+
+.initial-screen-catalog:after
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#02549e), to(rgba(216,216,216,0)));
+
+    background: -webkit-linear-gradient(top, #02549e 0%, rgba(216,216,216,0) 100%);
+
+    background: -o-linear-gradient(top, #02549e 0%, rgba(216,216,216,0) 100%);
+
+    background: linear-gradient(180deg, #02549e 0%, rgba(216,216,216,0) 100%);
+}
+
+.initial-screen-catalog h1
+{
+    max-width: 462px;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+
+.initial-screen-catalog p
+{
+    max-width: 410px;
+}
+
+.initial-screen-catalog p:before
+{
+    background: 0;
+}
+
+.product-card
+{
+    position: relative;
+
+    margin-top: 20px;
+    padding: 55px 50px;
+
+    background: #fff;
+    box-shadow: 0 20px 6px -10px rgba(0,0,0,.05);
+}
+
+.product-card img
+{
+    max-width: 210px;
+    max-height: 140px;
+}
+
+.product-card__info
+{
+    width: 100%;
+    margin-left: 40px;
+}
+
+.product-card__info h3
+{
+    font-size: 1.125rem;
+
+    padding-bottom: 20px;
+
+    color: #444;
+    border-bottom: 1px solid #dadada;
+}
+
+.product-card__item
+{
+    margin-top: 15px;
+}
+
+.product-card__item p
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    color: #444;
+}
+
+.product-card__item p:first-child
+{
+    width: 220px;
+    margin-right: 40px;
+}
+
+.product-card .button-order
+{
+    font-size: 0.875rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 12px 22px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 1px solid #0456a0;
+    background: #0456a0;
+}
+
+.section--consultation
+{
+    margin-top: 120px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+
+    background: url('../images/consultation-bg.jpg') no-repeat center/cover #0456a0;
+
+    background-blend-mode: multiply;
+}
+
+.section--consultation h2
+{
+    font-size: 2.25rem;
+    font-weight: 300;
+
+    color: #fff;
+}
+
+.section--consultation p
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    margin-top: 20px;
+
+    color: #fff;
+}
+
+.section--consultation .button--consultation
+{
+    font-size: 0.875rem;
+
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 12px 19px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 1px solid #fff;
+    background: #0456a0;
+}
+
+.page--contatcs__item
+{
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #dadada;
+}
+
+.page--contatcs__item:last-child
+{
+    border-bottom: 0;
+}
+
+.page--contatcs__item--left
+{
+    width: 245px;
+}
+
+.page--contatcs__item h6
+{
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+
+    margin-top: 15px;
+
+    color: #0456a0;
+}
+
+.page--contatcs__item h6:first-child
+{
+    margin-top: 0;
+}
+
+.page--contatcs__item p
+{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    margin-top: 15px;
+
+    color: #444;
+}
+
+.page--contatcs__item p:first-child
+{
+    margin-top: 0;
+}
+
+.page--contatcs .map
+{
+    width: 750px;
+    height: 240px;
+    margin-top: 35px;
+
+    background: #f4f4f4;
 }

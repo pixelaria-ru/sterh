@@ -1,0 +1,30 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title Каталог
+  body 
+    include inc/header.pug
+    main.main.bg-pattern
+      section.section--initial-screen.initial-screen-catalog.flex.a-i__c
+        .container.pd-200.flex.f-d__c.a-i__f-e
+          h1 Аренда дизельных электростанций
+          p ДЭС используются во время строительства для обеспечения электричеством объекта, оборудования или как резервный источник питания. В нашем транспортном парке собраны генераторы ведущих мировых производителей от 14 кВт до 320 кВт.
+      .container.pd-200
+        +product-card
+        +product-card
+        +product-card
+        +product-card
+        +product-card
+        +product-card
+        +product-card
+        +product-card
+        +product-card
+        +product-card
+      section.section--consultation
+        .container.pd-200
+          h2 Трудно определиться с выбором?
+          p Наш специалисты будут рады помочь подобрать оптимальное оборудование для решения ваших задач
+          a(href='#').button--consultation Заказать консульттацию
+    include inc/footer.pug
+            

@@ -1,0 +1,20 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title Категория новостей
+  body 
+    include inc/header.pug
+    main.main.bg-pattern
+      .bg-img 
+        img(src='images/bg-category-news.jpg' alt='')
+      .container.pd-200
+        .page
+          h1 Последние Новости
+          +news-article
+          +news-article
+          +news-article
+          +news-article
+          +news-article
+    include inc/footer.pug
+            
