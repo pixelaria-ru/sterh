@@ -935,7 +935,7 @@ input[type='submit'] + label
 
 .section--advantages__tabs
 {
-    width: 1080px;
+    max-width: 1080px;
     height: 250px;
     margin-top: -60px;
     padding-right: 50px;
@@ -1409,7 +1409,7 @@ input[type='submit'] + label
 
 .product-card__item p:first-child
 {
-    width: 220px;
+    min-width: 220px;
     margin-right: 40px;
 }
 
@@ -1472,4 +1472,386 @@ input[type='submit'] + label
     margin-top: 35px;
 
     background: #f4f4f4;
+}
+
+@media (max-width: 1280px)
+{
+    .section--shema
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 1270px)
+{
+    .header .logo
+    {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1220px)
+{
+    .pd-200
+    {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 1075px)
+{
+    .section--advantages__tabs
+    {
+        padding-left: 40px;
+    }
+
+    .section--advantages__tabs .wrd-tabs
+    {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 965px)
+{
+    .product-card
+    {
+        padding: 45px 30px;
+    }
+
+    .product-card img
+    {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 950px)
+{
+    .section--goods .goods-item
+    {
+        width: calc(50% - 25px);
+        min-width: 277px;
+        margin-right: 50px;
+    }
+
+    .section--goods .goods-item__info
+    {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+
+    .section--rent__img:before
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 661px)
+{
+    .section--goods .goods-item:nth-child(2)
+    {
+        margin-right: 0;
+    }
+
+    .section--goods .goods-item:last-child
+    {
+        width: 100%;
+        max-height: 230px;
+        margin-top: 50px;
+
+        flex-wrap: wrap;
+    }
+
+    .section--goods .goods-item:last-child h3
+    {
+        margin-top: 22px;
+    }
+
+    .section--goods .goods-item:last-child .goods-item__img
+    {
+        padding-right: 50px;
+
+        border-right: 1px solid #dadada;
+
+        margin-rgiht: 50px;
+    }
+
+    .section--goods .goods-item:last-child .goods-item__list
+    {
+        padding-top: 20px;
+
+        border-top: 0;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .header__item
+    {
+        margin-right: 20px;
+    }
+
+    .button-leed
+    {
+        display: none;
+    }
+
+    .section--rent__img
+    {
+        width: 290px;
+    }
+}
+
+@media (max-width: 860px)
+{
+    .section--rent__img
+    {
+        width: 240px;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .section--advantages img
+    {
+        margin-top: 0;
+    }
+
+    .section--rent__img
+    {
+        width: 160px;
+    }
+
+    .section--rent__item:last-child
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 760px)
+{
+    .header__nav
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 725px)
+{
+    .product-card img
+    {
+        max-width: 100%;
+        max-height: 220px;
+
+        -o-object-fit: contain;
+
+           object-fit: contain;
+    }
+
+    .product-card__info
+    {
+        margin-top: 35px;
+        margin-left: 0;
+    }
+
+    .product-card a
+    {
+        flex-direction: column;
+    }
+
+    .section--rent__img
+    {
+        width: 100%;
+    }
+
+    .section--rent__info
+    {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .section--goods .goods-item
+    {
+        margin-right: 20px;
+    }
+
+    .section--goods .goods-item:last-child
+    {
+        margin-top: 20px;
+    }
+
+    .section--advantages__tabs
+    {
+        flex-direction: column;
+
+        height: -webkit-max-content;
+
+        height: -moz-max-content;
+
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 660px)
+{
+    .section--advantages img
+    {
+        float: inherit;
+    }
+
+    .section--goods .goods-item
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 625px)
+{
+    .product-card
+    {
+        padding-bottom: 78px;
+    }
+
+    .product-card__item
+    {
+        flex-direction: column;
+    }
+
+    .product-card__item p:first-child
+    {
+        color: #8f8f8f;
+    }
+
+    .product-card .button--blue
+    {
+        top: inherit;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+    }
+
+    .section--rent__list
+    {
+        flex-wrap: wrap;
+    }
+
+    .section--rent__item
+    {
+        width: 50%;
+    }
+
+    .section--rent__item:nth-child(3),
+    .section--rent__item:nth-child(4)
+    {
+        margin-top: 40px;
+    }
+
+    .section--rent__item:last-child
+    {
+        display: inherit;
+    }
+}
+
+@media (max-width: 490px)
+{
+    .initial-screen-catalog h1
+    {
+        font-size: 2.8125rem;
+
+        max-width: 100%;
+        margin-right: 0;
+
+        word-break: break-all;
+    }
+
+    .initial-screen-catalog p
+    {
+        margin-left: 0;
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 455px)
+{
+    .section--rent
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .section--rent__list
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .section--rent__info
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .section--rent__item
+    {
+        width: 100%;
+    }
+
+    .section--rent__item:nth-child(2)
+    {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .pd-200
+    {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .section--rent
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .section--initial-screen p
+    {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 360px)
+{
+    .section--advantages__tabs
+    {
+        padding-left: 20px;
+
+        align-items: flex-start;
+    }
+
+    .section--advantages__tabs .wrd-tabs
+    {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .header .logo img
+    {
+        width: 30px;
+        height: 30px;
+    }
 }
