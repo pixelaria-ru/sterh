@@ -1,31 +1,6 @@
 "use strict";
 
 wrdTabs('.wrd-tabs');
-"use strict";
-
-function wrdTabs(container) {
-  var containerLinks = document.querySelector(container);
-  var tabsLinks = containerLinks.getElementsByClassName('wrd-tabs__link');
-
-  for (var i = 0, max = tabsLinks.length; i < max; i += 1) {
-    tabsLinks[i].addEventListener('click', function (e) {
-      e.preventDefault(); // remove class active all links and tabs
-
-      for (var _i = 0, _max = tabsLinks.length; _i < _max; _i += 1) {
-        tabsLinks[_i].classList.remove('active');
-
-        var _id = tabsLinks[_i].getAttribute('href').slice(1);
-
-        document.getElementById(_id).classList.remove('active');
-      } // add click link active class
-
-
-      this.classList.add('active');
-      var id = this.getAttribute('href').slice(1);
-      document.getElementById(id).classList.add('active');
-    });
-  }
-}
 'use strict';
 
 ;
@@ -75,3 +50,28 @@ function wrdTabs(container) {
     request.send();
   } catch (e) {}
 })(window, document);
+"use strict";
+
+function wrdTabs(container) {
+  var containerLinks = document.querySelector(container);
+  var tabsLinks = containerLinks.getElementsByClassName('wrd-tabs__link');
+
+  for (var i = 0, max = tabsLinks.length; i < max; i += 1) {
+    tabsLinks[i].addEventListener('click', function (e) {
+      e.preventDefault(); // remove class active all links and tabs
+
+      for (var _i = 0, _max = tabsLinks.length; _i < _max; _i += 1) {
+        tabsLinks[_i].classList.remove('active');
+
+        var _id = tabsLinks[_i].getAttribute('href').slice(1);
+
+        document.getElementById(_id).classList.remove('active');
+      } // add click link active class
+
+
+      this.classList.add('active');
+      var id = this.getAttribute('href').slice(1);
+      document.getElementById(id).classList.add('active');
+    });
+  }
+}
