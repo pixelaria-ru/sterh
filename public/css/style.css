@@ -1467,7 +1467,7 @@ input[type='submit'] + label
 
 .page--contatcs .map
 {
-    width: 750px;
+    max-width: 750px;
     height: 240px;
     margin-top: 35px;
 
@@ -1658,6 +1658,12 @@ input[type='submit'] + label
 
 @media (max-width: 760px)
 {
+    .page--news h1
+    {
+        font-size: 1.5625rem;
+        line-height: 2.125rem;
+    }
+
     .page
     {
         padding: 70px;
@@ -1748,6 +1754,26 @@ input[type='submit'] + label
 
 @media (max-width: 725px)
 {
+    .news-article img
+    {
+        width: 100%;
+    }
+
+    .news-article__info
+    {
+        margin-top: 25px;
+    }
+
+    .news-article__info h3
+    {
+        font-size: 1rem;
+    }
+
+    .news-article a
+    {
+        flex-wrap: wrap;
+    }
+
     .product-card img
     {
         max-width: 100%;
@@ -1782,6 +1808,17 @@ input[type='submit'] + label
 
 @media (max-width: 700px)
 {
+    .other-news
+    {
+        flex-direction: column;
+    }
+
+    .other-news .button--blue
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .section--goods .goods-item
     {
         margin-right: 20px;
@@ -1871,6 +1908,48 @@ input[type='submit'] + label
 
 @media (max-width: 490px)
 {
+    .main--product .page__item h6
+    {
+        font-weight: 400;
+
+        color: #8f8f8f;
+    }
+
+    .page__item
+    {
+        position: relative;
+    }
+
+    .page__item h6
+    {
+        margin-top: 23px;
+    }
+
+    .page__item p
+    {
+        margin-top: 23px;
+    }
+
+    .page__item--left
+    {
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+    }
+
+    .page__item--right
+    {
+        margin-top: 25px;
+    }
+
+    .page--news .img--right
+    {
+        max-width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
     .page
     {
         padding: 20px;

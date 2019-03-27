@@ -115,6 +115,10 @@
 
 
 @media(max-width: 760px)
+  .page--news
+    h1
+      font-size 25px
+      line-height 34px
   .page
     padding 70px
     &--product
@@ -160,6 +164,15 @@
 
 
 @media(max-width: 725px)
+  .news-article
+    img
+      width 100%
+    &__info
+      margin-top: 25px
+      h3
+        font-size 16px
+    a
+      flex-wrap wrap
   .product-card
     img
       object-fit contain
@@ -176,6 +189,12 @@
     &__info
       margin-top 50px
 @media(max-width: 700px)
+  .other-news
+    flex-direction column
+  .other-news
+    .button--blue
+      margin-top 20px
+      margin-bottom 20px
   .section--goods
     .goods-item
       margin-right 20px
@@ -223,6 +242,28 @@
 
 
 @media(max-width: 490px)
+  .main--product
+    .page__item
+        h6
+          font-weight 400
+          color #8f8f8f
+  .page__item
+    position: relative;
+    h6
+      margin-top: 23px
+    p
+      margin-top: 23px
+  .page__item--left
+    position: absolute;
+    left 0
+    width 100%
+  .page__item--right
+    margin-top 25px
+
+  .page--news .img--right
+    max-width 100%
+    margin-top 25px
+    margin-bottom 25px
   .page
     padding 20px
 
