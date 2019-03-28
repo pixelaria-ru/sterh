@@ -80,6 +80,15 @@
 
 
 @media(max-width: 900px)
+  .footer
+    .pd-85
+      padding-left: 20px
+      padding-right 20px
+    .footer__list
+      max-width 160px
+    .footer__bottom
+      p
+        max-width 430px
   .page
     padding 70px 25px
   .main--product
@@ -131,29 +140,75 @@
         object-fit contain
     &__item--left
       width: 50%
+  .main.bg-menu
+    opacity: 0.3;
+    filter: grayscale(1);
   .header
     &__nav
-      display none
+      position: fixed;
+      top 0
+      bottom 0
+      left 0
+      right 0
+      z-index -5
+      &.active
+          z-index 5
+
+    &__list
+      position: absolute;
+      background: #fff;
+      opacity 0
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      padding: 50px;
+      transform scale(0.5)
+      transition: .33s
+      transform-origin: bottom
+      flex-direction: column;
+      &.active
+        opacity: 1
+
+        transform scale(1)
+
+
+      .header__item
+        margin-top: 20px;
+        margin-right 0
+        a
+          font-size: 20px;
+          color: #424242;
     .logo
       margin-right: 0;
+
     &__hamburger
       margin-left 20px
       display flex
       flex-direction column
       cursor pointer
       background 0
+      &.active
+        span
+          transform: scale(0)
+        &:after
+          width: 50px;
+          transform: translate(0px,-12px) rotate(45deg);
+        &:before
+          transform: translate(0px,10px) rotate(-45deg);
       &:before
         content ''
         width 50px
         height 4px
         background-color #ffffff
         display block
+        transition: .33s
       &:after
         content ''
         width 40px
         height 4px
         background-color #ffffff
         display block
+        transition: .33s
       span
         width 30px
         display block
@@ -161,6 +216,7 @@
         margin-top 8px
         margin-bottom 8px
         background-color #ffffff
+        transition: .33s
 
 
 @media(max-width: 725px)
@@ -207,6 +263,16 @@
         padding-top 50px
         padding-bottom 50px
 @media(max-width: 660px)
+  .footer
+    .footer__list
+      margin-right 20px
+
+    .footer__left,.footer__bottom,  .container
+      flex-wrap wrap
+    .footer__right
+      text-align: left;
+    .footer__bottom a
+      margin-top 20px
   .section--advantages
     img
       float inherit
@@ -242,6 +308,10 @@
 
 
 @media(max-width: 490px)
+  .header__contacts a.mail
+    display none
+  .header__right
+    align-items: center;
   .main--product
     .page__item
         h6
@@ -280,6 +350,16 @@
         padding: 40px 0px;
 
 @media(max-width: 455px)
+  .footer
+    .container
+      justify-content:  center
+      text-align: center;
+    .footer__list
+      max-width 100%
+      width 100%
+      margin-right 0
+      text-align: center
+
   .section--rent
       padding-left 0
       padding-right 0

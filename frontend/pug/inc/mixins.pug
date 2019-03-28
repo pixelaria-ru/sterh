@@ -5,22 +5,23 @@ mixin icon(name,mod)
 
 
 mixin goods-item(title,img)
-  article.goods-item.flex.f-d__c.a-i__c
-    h3= title
-    .goods-item__img
-      img(src=`images/${img}` alt='')
-    ul.goods-item__list
-      li.goods-item__item.flex
-        p Мощности:
-        p от 14 до 320 кВт
-      li.goods-item__item.flex
-        p Исполнение: 
-        p в кожухе, передвижные 
-      li.goods-item__item.flex
-        p Время поставки: 
-        p от 1 суток
-    .goods-item__info
-      p Atlas Copro, SDMO, Visa Onis
+  article.goods-item
+    a(href='page-product.html').flex.f-d__c.a-i__c
+      h3= title
+      .goods-item__img
+        img(src=`images/${img}` alt='')
+      ul.goods-item__list
+        li.goods-item__item.flex
+          p Мощности:
+          p от 14 до 320 кВт
+        li.goods-item__item.flex
+          p Исполнение: 
+          p в кожухе, передвижные 
+        li.goods-item__item.flex
+          p Время поставки: 
+          p от 1 суток
+      .goods-item__info
+        p Atlas Copro, SDMO, Visa Onis
 
 mixin news-article
   article.news-article
