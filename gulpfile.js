@@ -114,6 +114,7 @@ suffix: ".min"
 // Svg sprites
 gulp.task('svg:build', function () {
 return gulp.src('frontend/assets/svg/*.svg')
+.pipe(gulp.dest('public/svg'))
 .pipe(cheerio({
 run: function ($) {
 $('[fill]').removeAttr('fill');
