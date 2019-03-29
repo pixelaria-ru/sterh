@@ -1,12 +1,19 @@
 include mixins.pug
 header.header.container.pd-200.flex.j-c__s-b.a-i__c
-  .header__left.flex 
+  .header__left.flex.a-i__c
     a(href='index.html').logo
-      img(src='images/header-logo.png' alt='')
+      img(src='images/logo.png' alt='')
     nav.header__nav.flex.a-i__c
       ul.header__list.flex
         li.header__item.b-line
           a(href='catalog.html') Оборудование
+          ul.header__menu--dropdown 
+            li.header__item
+              a(href='catalog.html').b-line Дизель-генераторы 
+            li.header__item
+              a(href='catalog.html').b-line Компрессоры
+            li.header__item
+              a(href='catalog.html').b-line Виброплиты
         li.header__item.b-line
           a(href='#') О нас
         li.header__item.b-line
@@ -14,7 +21,7 @@ header.header.container.pd-200.flex.j-c__s-b.a-i__c
         li.header__item.b-line
           a(href='contacts.html') Контакты
         li.header__item.b-line
-          a(href='#') Партнерам
+          a(href='page-partners.html') Партнерам
   .header__right.flex
     button.button-leed.flex.a-i__c.j-c__c Заказать 
     .header__contacts.flex.f-d__c

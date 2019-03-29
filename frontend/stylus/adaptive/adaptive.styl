@@ -107,6 +107,17 @@
       width 290px
 
 @media(max-width: 860px)
+  .partners__list-main
+    align-items inherit
+  .page--partners
+    .list-main__item
+      width calc(50% - 10px)
+      &:first-child
+        margin-right 20px
+      &.item--blue
+        order 1
+        width 100%
+        margin-top 20px
   .section--rent
     &__img
       width 240px
@@ -124,6 +135,14 @@
 
 
 @media(max-width: 760px)
+  .page--partners .partners-img img
+    margin-top 9px
+  .page--partners .list-today__item
+    width: 57%;
+    margin-top: 26px;
+    border 0
+  .partners__list-today
+    justify-content: center
   .page--news
     h1
       font-size 25px
@@ -245,6 +264,13 @@
     &__info
       margin-top 50px
 @media(max-width: 700px)
+  .page--partners .list-main__item
+      width: 100%;
+      margin-top: 20px;
+      &:first-child
+          margin-right: 0;
+  .page--partners .list-today__item
+    width: 80%;
   .other-news
     flex-direction column
   .other-news

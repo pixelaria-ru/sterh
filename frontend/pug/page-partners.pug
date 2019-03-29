@@ -1,0 +1,47 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title Категория новостей
+  body 
+    include inc/header.pug
+    main.main.bg-pattern
+      .bg-img 
+        img(src='images/bg-category-news.jpg' alt='')
+      .container.pd-200
+        .page.page--partners
+          h1 
+            span STERН 
+            |- качество и надежность
+          ul.partners__list-main.flex.a-i__c.f-w__w
+            li.list-main__item
+              h6 ГЕОГРАФИЯ
+              p Стерх был основан в 2018 году.  Мы работаем на территории Петербурга и Северо-Западного региона. 
+            li.list-main__item.item--blue
+              h6 НАПРАВЛЕНИЯ
+              p «Холодная» аренда дизельных генераторов, компрессоров и средств малой механизации. Обеспечение объектов электроэнергией, проведение пескоструйных работ, работ по уплотнению грунта.
+            li.list-main__item
+              h6 ПРЕИМУЩЕСТВА
+              p ✔ Собственный парк техники
+              p ✔ Ответственный подход
+              p ✔ Доставка оборудования
+              p ✔ Сервис 24/7
+          h2.h2--center STERH сегодня - это
+          ul.partners__list-today.flex.f-w__w 
+            li.list-today__item
+              p Профессиональные сотрудники и более 100 единиц техники
+            li.list-today__item
+              p Оборудование только ведущих европейских производителей 
+            li.list-today__item
+              p клиенты, работающие в производственном и строительном секторе
+          .partners-img.flex.j-c__c.f-w__w
+            img(src='images/partner-1.jpg' alt='')
+            img(src='images/partner-2.jpg' alt='')
+            img(src='images/partner-3.jpg' alt='')
+            img(src='images/partner-4.jpg' alt='')
+            img(src='images/partner-5.jpg' alt='')
+            img(src='images/partner-6.jpg' alt='')
+          button.partners__botton.flex.a-i__c 
+            span Условия аренды
+            
+    include inc/footer.pug

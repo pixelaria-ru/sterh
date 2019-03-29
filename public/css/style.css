@@ -373,13 +373,15 @@ input[type='submit'] + label
 .bg-pattern:before
 {
     position: fixed;
-    z-index: -2;
+    z-index: -99;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 
     content: '';
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
 
     opacity: .1;
     background: url('../svg/pattern.svg') fixed #f6f6f6;
@@ -425,7 +427,8 @@ input[type='submit'] + label
 
 .header .logo
 {
-    margin-right: 70px;
+    max-width: 108px;
+    margin-right: 40px;
 }
 
 .header .logo img
@@ -436,7 +439,9 @@ input[type='submit'] + label
 
 .header__item
 {
-    margin-right: 25px;
+    position: relative;
+
+    margin-right: 23px;
 }
 
 .header__item a
@@ -445,6 +450,44 @@ input[type='submit'] + label
     font-weight: 700;
 
     color: #fff;
+}
+
+.header__item:hover .header__menu--dropdown,
+.header__item:focus .header__menu--dropdown
+{
+    z-index: 1;
+    top: 20px;
+
+    opacity: 1;
+}
+
+.header__menu--dropdown
+{
+    position: absolute;
+    z-index: -5;
+    top: -100px;
+    left: 0;
+
+    width: -webkit-max-content;
+
+    width: -moz-max-content;
+
+    width: max-content;
+
+    transition: .33s;
+
+    opacity: 0;
+}
+
+.header__menu--dropdown .header__item
+{
+    margin-top: 15px;
+}
+
+.header__menu--dropdown .header__item a
+{
+    font-size: 0.9375rem;
+    font-weight: 400;
 }
 
 .header__right
@@ -1014,6 +1057,8 @@ input[type='submit'] + label
 .section--shema:before
 {
     position: absolute;
+
+    background-attachment: inherit;
 }
 
 .section--shema h2
@@ -1553,6 +1598,16 @@ input[type='submit'] + label
     margin-bottom: 120px;
 }
 
+.initial-screen-catalog .initial-screen__info
+{
+    margin-top: 100px;
+}
+
+.initial-screen-catalog .initial-screen__info:after
+{
+    height: 10%;
+}
+
 .initial-screen-catalog:before
 {
     position: absolute;
@@ -1583,13 +1638,13 @@ input[type='submit'] + label
 .initial-screen-catalog h1
 {
     max-width: 462px;
-    margin-top: 100px;
     margin-right: 20px;
 }
 
 .initial-screen-catalog p
 {
     max-width: 410px;
+    padding: 15px 30px;
 }
 
 .initial-screen-catalog p:before
@@ -1708,6 +1763,188 @@ input[type='submit'] + label
     margin-top: 35px;
 
     background: #f4f4f4;
+}
+
+.page--partners h1 span
+{
+    color: #0456a0;
+}
+
+.page--partners .h2--center
+{
+    font-size: 1.5rem;
+
+    margin-top: 60px;
+
+    text-align: center;
+
+    color: #444;
+}
+
+.page--partners .list-main__item
+{
+    width: 33%;
+    padding: 25px 30px;
+
+    background: #f6f6f6;
+}
+
+.page--partners .list-main__item.item--blue
+{
+    background: #0456a0;
+}
+
+.page--partners .list-main__item.item--blue h6,
+.page--partners .list-main__item.item--blue p
+{
+    color: #fff;
+}
+
+.page--partners .list-main__item h6
+{
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+
+    color: #444;
+}
+
+.page--partners .list-main__item p
+{
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.75rem;
+
+    margin-top: 5px;
+
+    color: #444;
+}
+
+.page--partners .partners__list-today
+{
+    margin-top: 50px;
+}
+
+.page--partners .list-today__item
+{
+    position: relative;
+
+    width: 33%;
+    padding: 5px 30px;
+
+    border-right: 1px solid #dadada;
+}
+
+.page--partners .list-today__item:before
+{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    margin: auto;
+
+    content: '';
+
+    justify-content: center;
+    align-items: center;
+}
+
+.page--partners .list-today__item:nth-child(1):before
+{
+    font-size: 4.5rem;
+    font-weight: 700;
+
+    content: '100';
+
+    opacity: .05;
+    color: #444;
+}
+
+.page--partners .list-today__item:nth-child(2):before
+{
+    background: url('../images/partner-decor-1.jpg') no-repeat center;
+}
+
+.page--partners .list-today__item:nth-child(3):before
+{
+    background: url('../images/partner-decor-2.jpg') no-repeat center;
+}
+
+.page--partners .list-today__item:last-child
+{
+    border-right: 0;
+}
+
+.page--partners .list-today__item p
+{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    color: #444;
+}
+
+.page--partners .partners-img
+{
+    margin-top: 60px;
+}
+
+.page--partners .partners-img img
+{
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin-right: 15px;
+}
+
+.page--partners .partners-img img:last-child
+{
+    margin-right: 0;
+}
+
+.page--partners .partners__botton
+{
+    margin-top: 60px;
+
+    background: 0;
+}
+
+.page--partners .partners__botton span
+{
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    padding-bottom: 2px;
+
+    color: #0456a0;
+    border-bottom: 1px solid;
+}
+
+.page--partners .partners__botton:before
+{
+    display: block;
+
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+
+    content: '';
+
+    background: url('../images/contract.jpg');
 }
 
 @media (max-width: 1280px)
@@ -1884,6 +2121,29 @@ input[type='submit'] + label
 
 @media (max-width: 860px)
 {
+    .partners__list-main
+    {
+        align-items: inherit;
+    }
+
+    .page--partners .list-main__item
+    {
+        width: calc(50% - 10px);
+    }
+
+    .page--partners .list-main__item:first-child
+    {
+        margin-right: 20px;
+    }
+
+    .page--partners .list-main__item.item--blue
+    {
+        width: 100%;
+        margin-top: 20px;
+
+        order: 1;
+    }
+
     .section--rent__img
     {
         width: 240px;
@@ -1910,6 +2170,24 @@ input[type='submit'] + label
 
 @media (max-width: 760px)
 {
+    .page--partners .partners-img img
+    {
+        margin-top: 9px;
+    }
+
+    .page--partners .list-today__item
+    {
+        width: 57%;
+        margin-top: 26px;
+
+        border: 0;
+    }
+
+    .partners__list-today
+    {
+        justify-content: center;
+    }
+
     .page--news h1
     {
         font-size: 1.5625rem;
@@ -2146,6 +2424,22 @@ input[type='submit'] + label
 
 @media (max-width: 700px)
 {
+    .page--partners .list-main__item
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .page--partners .list-main__item:first-child
+    {
+        margin-right: 0;
+    }
+
+    .page--partners .list-today__item
+    {
+        width: 80%;
+    }
+
     .other-news
     {
         flex-direction: column;
