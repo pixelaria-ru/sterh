@@ -1,6 +1,25 @@
 wrdTabs('.wrd-tabs');
 
 
+
+(function(){
+  const orderButton = document.getElementsByClassName('button--order');
+  const modalus = document.getElementsByClassName('modalus')[0];
+  for(let i = 0, max = orderButton.length; i < max; i += 1 ){
+    orderButton[i].addEventListener('click', function(){
+      modalus.classList.add('active');
+    })
+  }
+  modalus.addEventListener('click', function(e){
+    if(e.target.classList.contains('modalus')){
+      modalus.classList.remove('active');
+      console.log(e.target)
+    }
+  })
+}());
+
+
+
 (function(){
     const hamburger = document.querySelector('.header__hamburger');
     const menu = document.querySelector('.header__list');
@@ -25,4 +44,4 @@ wrdTabs('.wrd-tabs');
     })
 
 
-})()
+})();

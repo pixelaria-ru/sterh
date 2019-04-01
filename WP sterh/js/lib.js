@@ -3,6 +3,24 @@
 wrdTabs('.wrd-tabs');
 
 (function () {
+  var orderButton = document.getElementsByClassName('button--order');
+  var modalus = document.getElementsByClassName('modalus')[0];
+
+  for (var i = 0, max = orderButton.length; i < max; i += 1) {
+    orderButton[i].addEventListener('click', function () {
+      modalus.classList.add('active');
+    });
+  }
+
+  modalus.addEventListener('click', function (e) {
+    if (e.target.classList.contains('modalus')) {
+      modalus.classList.remove('active');
+      console.log(e.target);
+    }
+  });
+})();
+
+(function () {
   var hamburger = document.querySelector('.header__hamburger');
   var menu = document.querySelector('.header__list');
   var nav = document.querySelector('.header__nav');
@@ -75,9 +93,9 @@ wrdTabs('.wrd-tabs');
 "use strict";
 
 function wrdTabs(container) {
-  if (document.querySelector(container.container)) {
+  if (document.querySelector(container)) {
     (function () {
-      var containerLinks = document.querySelector(container.container);
+      var containerLinks = document.querySelector(container);
       var tabsLinks = containerLinks.getElementsByClassName('wrd-tabs__link');
 
       for (var i = 0, max = tabsLinks.length; i < max; i += 1) {

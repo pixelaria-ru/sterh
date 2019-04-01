@@ -1,4 +1,14 @@
 <footer class="footer">
+  
+      <div class="modalus flex j-c__c a-i__c bg-dark">
+        <form class="form--order">
+          <input class="form--order__input" type="text" name="name" placeholder="Ваше имя">
+          <input class="form--order__input" type="email" name="email" placeholder="Ваш email">
+          <input class="form--order__input" type="tel" name="tel" placeholder="Ваш телефон">
+          <button class="form--order__submit button--blue">Отправить</button>
+        </form>
+      </div>
+
       <div class="container flex j-c__s-b pd-85">
         <div class="footer__left flex">
           <?php if(has_nav_menu('footer-menu-1')){

@@ -384,7 +384,7 @@ input[type='submit'] + label
             transform: translateZ(0);
 
     opacity: .1;
-    background: url('../svg/pattern.svg') fixed #f6f6f6;
+    background: url('../svg/pattern.svg') #f6f6f6;
 }
 
 .container
@@ -410,10 +410,82 @@ input[type='submit'] + label
 
     padding: 12px 22px;
 
+    transition: .33s;
     text-transform: uppercase;
 
     color: #fff;
     background: #0456a0;
+}
+
+.button--blue:hover,
+.button--blue:focus
+{
+    background: #3f98e9;
+}
+
+.modalus
+{
+    position: fixed;
+    z-index: -9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+}
+
+.modalus:before
+{
+    cursor: pointer;
+}
+
+.modalus.active
+{
+    z-index: 9;
+
+    opacity: 1;
+}
+
+.modalus.active .form--order
+{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.form--order
+{
+    position: relative;
+
+    max-width: 400px;
+    padding: 50px;
+
+    transition: .33s;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+
+    background: #fff;
+}
+
+.form--order__input
+{
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
+
+    box-shadow: inset 0 0 10px rgba(0,0,0,.1);
+}
+
+.form--order__input:first-child
+{
+    margin-top: 0;
+}
+
+.form--order__submit
+{
+    width: 100%;
+    margin-top: 15px;
+    padding: 20px;
 }
 
 .header

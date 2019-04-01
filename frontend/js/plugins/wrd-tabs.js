@@ -1,6 +1,7 @@
 function wrdTabs(container){
-  if(document.querySelector(container.container)){
-    let containerLinks = document.querySelector(container.container)
+
+  if(document.querySelector(container)){
+    let containerLinks = document.querySelector(container)
     let tabsLinks = containerLinks.getElementsByClassName('wrd-tabs__link');
 
     for(let i = 0, max = tabsLinks.length; i < max; i += 1){

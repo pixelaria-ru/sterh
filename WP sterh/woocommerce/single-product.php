@@ -53,7 +53,7 @@
               <p><?php echo the_excerpt();  ?></p>
             </div>
             <div class="page--product__order flex a-i__c j-c__f-e"><a class="button--nav" href="#">Заказать консультацию</a>
-              <button class="button button--blue">ЗАКАЗАТЬ</button>
+              <button class="button button--blue button--order">ЗАКАЗАТЬ</button>
             </div>
             <div class="page--product__conditions">
               <p>Условия работы, сроков, можно кратко, одно-два предложения с ключевой информацией</p>
